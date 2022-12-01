@@ -28,6 +28,11 @@ public class Tests {
         webdriver.manage().window().maximize();
     }
 
+    @AfterEach
+    public void closeDriver() {
+        webdriver.close();
+    }
+
 
 
     @Test
